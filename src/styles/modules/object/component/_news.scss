@@ -1,7 +1,6 @@
 .c-news {
 	width: 100%;
 	margin-bottom: 30px;
-
 	@include breakpoint-up(phone) {
 		flex-basis: calc((100% - 2 * 10px) / 2);
 	}
@@ -69,7 +68,7 @@
 		border-left: 2px solid #eee;
 	}
 
-	&___time {
+	&__time {
 		margin-left: 5px;
 		font-size: 1.2rem
 	}
@@ -82,6 +81,9 @@
 	}
 
 	&__body {
+		border: 2px solid #eee;
+		border-top: none;
+		padding: 0 20px 20px;
 		.news_desc {
 			p {
 				font-size: 1.6rem;
@@ -91,37 +93,4 @@
 }
 
 
-.top {
-	padding-top: 40px;
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-  grid-gap: 10px;
-	@include breakpoint-up(tab-port) {
-		grid-template-columns: repeat(5,1fr);
-	}
-}
 
-.p-listing {
-	&__item {
-		box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    background-color: #fff;
-    border-radius: 4px;
-		transition: all .2s ease-in;
-    transform: scale(1);
-		&:hover {
-			transform: scale(1.01);
-		}
-	}
-
-	&__image {
-
-	}
-
-	&__title {
-		padding: 10px;
-    display: block;
-    line-height: 1.2em;
-    font-size: 14px;
-    color: inherit;
-	}
-}

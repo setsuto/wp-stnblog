@@ -1,14 +1,36 @@
 .c-mainTitle {
-  position: relative;
-  text-transform: uppercase;
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  letter-spacing: .2em;
+  text-align: center;
   h1 {
-    font-weight: normal;    
-    font-size: 2.6rem;
+    font-weight: normal;
+    font-size: 2.4rem;
+    width: 60%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(0,0,0, .15);
+    line-height: .1em;
+    padding-top: 20px;
+    span {
+      background: #f8f9fa;
+      padding: 0 10px;
+      }
+  }
+}
+
+.c-subTitle {
+  letter-spacing: .2em;
+  text-align: center;
+  h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid rgba(0,0,0, .15);
+    line-height: .1em;
+    padding-top: 20px;
+    span {
+    background: #f8f9fa;
+    padding: 0 10px;
+    }
   }
 }
 

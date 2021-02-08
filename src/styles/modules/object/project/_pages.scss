@@ -1,11 +1,39 @@
-.main {
-
-}
-
-
 .article-container {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  @include breakpoint-up(tab-port) {
+    flex-direction: row;
+  }
+  &__article {
+    flex-basis: 70%;
+  }
+  &__aside {
+    // order: -10;
+    flex-basis: 30%;
+  }
+}
+
+.hero {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
+	@include breakpoint-up(tab-port) {
+		grid-template-columns: repeat(5,1fr);
+	}
+}
+
+.sidebar-content {
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+  grid-gap: 10px;
 }
