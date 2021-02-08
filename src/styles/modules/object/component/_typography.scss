@@ -1,0 +1,72 @@
+.c-mainTitle {
+  position: relative;
+  text-transform: uppercase;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-weight: normal;    
+    font-size: 2.6rem;
+  }
+}
+
+.c-boxTitle {
+  display: inline-block;
+  padding: 5px 50px 5px 20px;
+  border: 1px solid #000;
+  letter-spacing: 0.13em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: $cWhite;
+}
+
+.c-heading-primary {
+  color: $cWhite;
+  text-transform: uppercase;
+
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    padding-bottom: 2rem;
+
+    @include breakpoint-up(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    // letter-spacing: 1.75rem;
+    animation: moveInRight 1s ease-out;
+
+    @include breakpoint-up(phone) {
+      letter-spacing: .5rem;
+      font-size: 3rem;
+    }
+  }
+}
+
+.c-heading-secondary {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  letter-spacing: .2rem;
+  transition: all .2s;
+
+  @include breakpoint-up(tab-port) {
+    font-size: 3rem;
+  }
+}

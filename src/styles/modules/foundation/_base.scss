@@ -1,0 +1,72 @@
+html {
+  width: 100%;
+  background-size: contain;
+  font-size: 62.5%;
+  letter-spacing: .07em;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-size: cover;
+  font-family: "Poppins", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  color: $cBlack;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  line-height: 1.4;
+  color: inherit;
+  margin: 0;
+}
+
+
+button {
+  border: none;
+  background: transparent;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

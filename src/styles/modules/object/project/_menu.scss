@@ -1,0 +1,63 @@
+.p-menu {
+  display: none;
+
+  @include breakpoint-up(tab-port) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    margin: auto;
+    height: 100%;
+    padding-left: 30px;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+  }
+
+  &__link {
+    cursor: pointer;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    transition: background-color 200ms ease;
+
+    &:hover {
+      position: relative;
+
+      &::before {
+        width: 100%;
+        height: 2px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: #000;
+      width: 0;
+      height: 0;
+      left: 0;
+      bottom: 2px;
+      transition: width 300ms ease-out;
+    }
+  }
+
+  &__item:last-child a {
+    text-transform: uppercase;
+    color: $cGreen-2;
+  }
+}
