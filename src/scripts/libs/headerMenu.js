@@ -3,7 +3,7 @@ var app = new Vue({
   data: {
     headerLists: [{
         id: 'global-container',
-        name: 'Qiita'
+        name: 'ニュース'
       },
       {
         id: 'about',
@@ -14,8 +14,12 @@ var app = new Vue({
         name: '趣味'
       },
       {
+        id: 'skill',
+        name: 'web'
+      },
+      {
         id: 'contact',
-        name: 'contact'
+        name: 'コンタクト'
       }
     ]
   },

@@ -16,7 +16,7 @@ wp_head();
 
 <body>
   <div id="global-container">
-    <header>
+    <header class="header">
       <section class="l-header l-content__width" id="headerMenu">
         <h1 class="p-header__title"><a href="<?php echo home_url(); ?>">S.TANABE</a></h1>
         <div class="p-menu">

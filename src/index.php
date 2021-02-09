@@ -78,7 +78,7 @@
           </div>
           <h2 class="c-news__title"><a v-bind:href="post['url']">{{ post['title'] }}</a></h2>
           <div class="c-news__desc">
-            <p>リンクをクリックすると外部記事へ遷移します。</p>
+            <p>リンクをクリックすると外部サイトへ遷移します。</p>
             <p><a v-bind:href="post['url']">[続きを読む]</a></p>
           </div>
         </div>
