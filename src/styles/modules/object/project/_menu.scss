@@ -1,3 +1,7 @@
+.p-header {
+  color: $cBlack;
+}
+
 .p-menu {
   display: none;
 
@@ -22,6 +26,7 @@
   }
 
   &__link {
+    color: $cBlack;
     cursor: pointer;
     border-radius: 3px;
     display: flex;

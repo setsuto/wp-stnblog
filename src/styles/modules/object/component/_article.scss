@@ -1,0 +1,52 @@
+.article {
+	.article_header {}
+	.article_title {
+		text-align: center;
+		font-size: 2.8rem;
+    padding: 10px 0;
+	}
+	.article_meta {
+    max-width: 220px;
+		display: flex;
+		padding: 30px 0;
+		align-items: center;
+		justify-content: space-between;
+
+			li {
+        list-style: none;
+
+				a {
+					line-height: 1;
+					display: inline-block;
+					padding: 5px 10px;
+					font-size:1.4rem;
+					border: 1px solid #eee;
+					color: $cBgBlack;
+					background: $cBgGray;
+				}
+			}
+	}
+
+	.article_body {
+    .content {
+  display: flex;
+  flex-direction: column;
+}
+  }
+
+	.article_content {}
+
+	.article_pic {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.article-menu {
+	.article_title {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+}

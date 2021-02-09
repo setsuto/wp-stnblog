@@ -31,7 +31,7 @@ img {
 }
 
 a {
-  color: $cBlack;
+  color: rgba(41,152,255,.85);
   text-decoration: none;
   transition: all .1s ease-in-out;
 
@@ -69,8 +69,4 @@ button {
   &:focus {
     outline: none;
   }
-}
-
-ul,li {
-  list-style: none;
 }

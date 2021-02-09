@@ -1,12 +1,20 @@
 .c-news {
 	width: 100%;
 	margin-bottom: 30px;
+
 	@include breakpoint-up(phone) {
 		flex-basis: calc((100% - 2 * 10px) / 2);
 	}
 
 	@include breakpoint-up(tab-port) {
 		flex-basis: calc((100% - 3 * 20px) / 3);
+	}
+
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	&___pic {
@@ -18,6 +26,7 @@
 		position: relative;
 		padding-top: 66.5%;
 		overflow: hidden;
+
 		img {
 			@include absCenter;
 			object-fit: cover;
@@ -84,6 +93,7 @@
 		border: 2px solid #eee;
 		border-top: none;
 		padding: 0 20px 20px;
+
 		.news_desc {
 			p {
 				font-size: 1.6rem;
@@ -91,6 +101,3 @@
 		}
 	}
 }
-
-
-

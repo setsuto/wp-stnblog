@@ -3,31 +3,31 @@
 <div class="l-content__width">
 
   <section class="hero">
-    <div class="c-listing__item">
+    <article class="c-listing__item">
       <a href="" class="c-listing__image">
         <img src="<?php echo get_template_directory_uri(); ?>./images/hero_1.jpg" alt="hero_1">
       </a>
       <a href="" class="c-listing__title">タイトル</a>
-    </div>
-    <div class="c-listing__item">
+    </article>
+    <article class="c-listing__item">
       <a href="" class="c-listing__image">
         <img src="<?php echo get_template_directory_uri(); ?>./images/hero_1.jpg" alt="hero_1">
       </a>
       <a href="" class="c-listing__title">タイトル</a>
-    </div>
-    <div class="c-listing__item">
+    </article>
+    <article class="c-listing__item">
       <a href="" class="c-listing__image">
         <img src="<?php echo get_template_directory_uri(); ?>./images/hero_1.jpg" alt="hero_1">
       </a>
       <a href="" class="c-listing__title">タイトル</a>
-    </div>
+    </article>
   </section>
 
   <section class="news u-pt100">
     <div class="c-mainTitle">
       <h1><span>最新の記事</span></h1>
     </div>
-    <div class="article-container u-pt50">
+    <div class="c-news__container u-pt50">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
           <article id="post-1" class="c-news">
@@ -63,7 +63,7 @@
     <div class="c-mainTitle">
       <h1><span>QIita投稿記事</span></h1>
     </div>
-    <div class="article-container u-pt50" id="qiita-posts">
+    <div class="c-news__container u-pt50" id="qiita-posts">
       <article v-for="post in posts" class="c-news">
         <div class="c-news__pic">
           <a class="c-news__pic-link" v-bind:href="post['url']">

@@ -18,7 +18,7 @@ wp_head();
   <div id="global-container">
     <header class="header">
       <section class="l-header l-content__width" id="headerMenu">
-        <h1 class="p-header__title"><a href="<?php echo home_url(); ?>">S.TANABE</a></h1>
+        <h1><a style="color:black" href="<?php echo home_url(); ?>">S.TANABE</a></h1>
         <div class="p-menu">
           <ul class="p-menu__list nav__links">
             <li v-for="headerList in headerLists" class="p-menu__item">
