@@ -27,14 +27,12 @@
 
   &__link {
     color: $cBlack;
-    cursor: pointer;
-    border-radius: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 40px;
+    font-weight: bold;
     font-size: 1.6rem;
-    font-weight: 500;
     line-height: 1;
     letter-spacing: 0.1em;
     transition: background-color 200ms ease;

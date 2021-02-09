@@ -39,40 +39,9 @@ add_theme_support('post-thumbnails');
  */
 add_theme_support('menus');
 
-class My_Widget extends WP_Widget
+
+function twpp_change_excerpt_length($length)
 {
-
-    /**
-     * ウィジェット名などを設定
-     */
-    public function __construct()
-    {
-        // widget actual processes
-    }
-
-    /**
-     * ウィジェットの内容を出力
-     */
-    public function widget($args, $instance)
-    {
-        // outputs the content of the widget
-    }
-
-    /**
-     * 管理用のオプションのフォームを出力
-     *
-     * @param array $instance ウィジェットオプション
-     */
-    public function form($instance)
-    {
-        // 管理用のオプションのフォームを出力
-    }
-
-    /**
-     * ウィジェットオプションの保存処理
-     */
-    public function update($new_instance, $old_instance)
-    {
-        // ウィジェットオプションの保存処理
-    }
+    return 50;
 }
+add_filter('excerpt_length', 'twpp_change_excerpt_length', 999);
