@@ -1,16 +1,13 @@
 .l-footer {
-  padding: 60px 0;
-  display: flex;
-  height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: $cWhite;
-  br {
-    display: block;
-    @include breakpoint-up(phone) {
-      display: none;
-    }
-  }
+  text-align: center;
+  padding: 25px 0;
+  font-size: 1.6rem;
 }
 
+
+
+.swiper-slide {
+  article {
+    display: flex;
+  }
+}

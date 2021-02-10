@@ -5,9 +5,9 @@ let vm = new Vue({
   },
   filters: {
     moment: function (date) {
-        return moment(date).format('YYYY.MM.DD HH:mm');
+      return moment(date).format('YYYY.MM.DD HH:mm');
     }
-},
+  },
   methods: {
     getPosts() {
       axios.get('https://qiita.com/api/v2/users/stnb1201/items')
@@ -17,9 +17,9 @@ let vm = new Vue({
         .catch((res) => {
           console.error(res);
         });
-      }
-    },
-    created() {
-      this.getPosts();
-    },
+    }
+  },
+  created() {
+    this.getPosts();
+  },
 });

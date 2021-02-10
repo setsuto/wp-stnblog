@@ -53,16 +53,16 @@
 					padding: 5px 10px;
 					font-size: 1.2rem;
 					border: 1px solid #eee;
-					color: $cBgBlack;
-					background: $cBgGray;
+					color: $cWhite;
+					background: $cBgBlack;
 				}
 			}
 		}
 	}
 
 	&__title {
-		font-size: 1.8rem;
-		padding: 20px 0;
+		font-size: 1.6rem;
+		padding: 15px 0;
 		line-height: 1.2;
 	}
 
@@ -81,7 +81,7 @@
 	&__desc {
 		p {
 			font-size: 1.2rem;
-			margin-bottom: 5px;
+			margin-top: 5px;
 		}
 	}
 

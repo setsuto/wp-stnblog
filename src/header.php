@@ -22,7 +22,7 @@ wp_head();
         <div class="p-menu">
           <ul class="p-menu__list nav__links">
             <li v-for="headerList in headerLists" class="p-menu__item">
-              <a :href="'#' + headerList.id" class="p-menu__link nav__link">{{headerList.name}}</a>
+              <a :href="headerList.id" class="p-menu__link nav__link">{{headerList.name}}</a>
             </li>
           </ul>
         </div>

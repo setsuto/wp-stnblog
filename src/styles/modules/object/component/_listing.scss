@@ -11,24 +11,28 @@
 		}
 	}
 
-	&__image {
-    padding-top: 65.5%;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    img {
-      @include absCenter;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
+  &__link {
+    a {
+      padding-top: 65.5%;
+      position: relative;
+      overflow: hidden;
+      display: block;
+
+      img {
+        @include absCenter;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
     }
-	}
+  }
 
 	&__title {
-		padding: 10px;
-    display: block;
-    line-height: 1.2em;
-    font-size: 14px;
-    color: inherit;
+    a {
+      padding: 10px;
+      display: block;
+      line-height: 1.2em;
+      font-size: 14px;
+    }
 	}
 }

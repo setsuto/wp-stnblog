@@ -45,3 +45,14 @@ function twpp_change_excerpt_length($length)
     return 50;
 }
 add_filter('excerpt_length', 'twpp_change_excerpt_length', 999);
+
+
+if (function_exists('register_sidebar')) {
+    register_sidebar(array(
+        'name' => 'サイドバー',
+        'id' => 'sidebar',
+        'description' => 'サイドバーウィジェット',
+        'before_widget' => '<div class="sidebar-content">',
+        'after_widget' => '</div>',
+    ));
+}
