@@ -8,7 +8,6 @@
 		flex-direction: column;
 		justify-content: space-between;
 		border-bottom: 1px solid #ccc;
-		margin-bottom: 30px;
 		@include breakpoint-up(phone) {
 			flex-direction: row;
 		}
@@ -50,8 +49,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		@include breakpoint-up(phone) {
-			width: 200px;
+		// @include breakpoint-up(phone) {
+		// 	width: 200px;
+		// }
+		.post-categories {
+			display: flex;
+			align-items: center;
 		}
 
 			li {

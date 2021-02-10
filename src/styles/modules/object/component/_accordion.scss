@@ -1,0 +1,41 @@
+.accordion {
+  color: $cWhite;
+  background: $cBgBlack;
+  border-bottom: 2px solid $cWhite;
+}
+
+.toggle {
+  position: relative;
+  color: $cWhite;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle i {
+  position: absolute;
+  right: 15px;
+  top: 30%;
+  font-size: 1.5em;
+}
+
+
+.accordion-body {
+  overflow: hidden;
+  transition: .3s ease-in-out;
+}
+
+
+.details {
+  padding: 10px;
+  border-bottom: 1px solid $cWhite;
+
+  ul {
+    li {}
+  }
+}
+
+.rotation-enter,
+.rotation-leave-to {
+  transform: rotateX(180deg)
+}

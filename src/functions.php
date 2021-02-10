@@ -55,4 +55,11 @@ if (function_exists('register_sidebar')) {
         'before_widget' => '<div class="sidebar-content">',
         'after_widget' => '</div>',
     ));
+    register_sidebar(array(
+        'name' => 'ピックアップエリア',
+        'id' => 'pickup',
+        'description' => 'ピツクアップウィジェット',
+        'before_widget' => '<div class="pickup">',
+        'after_widget' => '</div>',
+    ));
 }

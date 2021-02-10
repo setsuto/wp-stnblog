@@ -1,7 +1,7 @@
 <?php get_header(); ?>
-
 <div class="l-content__width u-pt20">
-  <main class="content">
+  <?php get_template_part('component/breadcrumb'); ?>
+  <main class="content u-pt40">
     <article class="content__article">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -36,5 +36,3 @@
     <?php get_sidebar('content'); ?>
   </main>
 </div>
-
-<?php get_footer(); ?>

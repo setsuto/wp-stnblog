@@ -1,99 +1,63 @@
 .pickup {
 	width: 100%;
 	margin-bottom: 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
 
-	@include breakpoint-up(phone) {
-		flex-basis: calc((100% - 2 * 10px) / 2);
-	}
-
-	&__container {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		flex-wrap: wrap;
-	}
-
-	&___pic {
-		margin-bottom: 10px;
-	}
-
-	&__pic-link {
-		display: block;
+	&__item {
+		overflow:	hidden;
 		position: relative;
-		padding-top: 66.5%;
-		overflow: hidden;
-
-		img {
-			@include absCenter;
-			object-fit: cover;
-			height: 100%;
-			width: 100%;
-		}
+		border: 2px solid #eee;
+		border-top: none;
 	}
 
-	&__meta {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 10px 0 0;
-
-		ul {
-			list-style: none;
-			padding: 0;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-
-			li {
-				padding-right: 10px;
-
-				a {
-					line-height: 1;
-					display: inline-block;
-					padding: 5px 10px;
-					font-size: 1.2rem;
-					border: 1px solid #eee;
-					color: $cWhite;
-					background: $cBgBlack;
-				}
+	&__image {
+		a {
+			display: block;
+			position: relative;
+			padding-top: 60%;
+			overflow: hidden;
+			img {
+				@include absCenter;
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
 			}
-		}
-	}
-
-	&__title {
-		font-size: 1.6rem;
-		padding: 15px 0;
-		line-height: 1.2;
-	}
-
-	&__titleBorder {
-		font-size: 2.4rem;
-		padding: 10px 15px;
-		margin: 15px 0;
-		border-left: 2px solid #eee;
-	}
-
-	&__time {
-		margin-left: 5px;
-		font-size: 1.2rem
-	}
-
-	&__desc {
-		p {
-			font-size: 1.2rem;
-			margin-top: 5px;
 		}
 	}
 
 	&__body {
-		border: 2px solid #eee;
-		border-top: none;
-		padding: 0 20px 20px;
+		// padding-bottom: 30px;
+	}
 
-		.news_desc {
-			p {
-				font-size: 1.6rem;
+	&__title {
+		font-size: 1.6rem;
+		padding: 10px;
+		line-height: 1.2;
+	}
+
+
+
+	&__meta {
+		color: $cWhite;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0;
+		list-style: none;
+		background: $cBgBlack;
+
+			li {
+				padding: 5px 8px;
+				color: $cWhite;
+				span {
+					font-size: 1.2rem;
+				}
 			}
-		}
+	}
+
+	&__title {
+
 	}
 }

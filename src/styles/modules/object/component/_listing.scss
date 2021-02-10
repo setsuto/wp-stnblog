@@ -1,4 +1,4 @@
-.c-listing {
+.listing {
 	&__item {
 		display: block;
 		border: 1px solid #eee;
@@ -11,7 +11,7 @@
 		}
 	}
 
-  &__link {
+  &__image {
     a {
       padding-top: 65.5%;
       position: relative;
@@ -19,6 +19,7 @@
       display: block;
 
       img {
+        object-position: top;
         @include absCenter;
         object-fit: cover;
         height: 100%;

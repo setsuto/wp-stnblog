@@ -1,0 +1,64 @@
+.p-hero {
+  width: 100%;
+  margin-bottom: 30px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  @include breakpoint-up(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include breakpoint-up(tab-port) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  &__content {
+    padding-bottom: 40px;
+    position: relative;
+    border-top: none;
+    transition: all .2s ease-in;
+    transform: scale(1);
+		&:hover {
+			transform: scale(1.05);
+		}
+  }
+
+  &__image {
+    background-color:	rgba(0,0,0,0.4);
+    @include breakpoint-up(phone) {
+      
+    }
+    a {
+      padding-top: 0;
+      display: block;
+      position: relative;
+      overflow: hidden;
+      @include breakpoint-up(phone) {
+        padding-top: 60%;
+
+      }
+
+      img {
+        @include absCenter;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  &__body {
+  }
+
+  &__title {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1.2rem;
+    padding: 5px;
+    line-height: 1.2;
+  }
+
+  &__time {
+    position: absolute;
+    top: 0;
+    right: 5px; 
+  }
+}

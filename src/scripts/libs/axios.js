@@ -5,7 +5,12 @@ let vm = new Vue({
   },
   filters: {
     moment: function (date) {
-      return moment(date).format('YYYY.MM.DD HH:mm');
+      return moment(date).format('YY.MM.DD HH:mm');
+    }
+  },
+  computed: {
+    limitCount() {
+      return this.posts.slice(0, 3)
     }
   },
   methods: {

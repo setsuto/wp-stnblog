@@ -1,0 +1,55 @@
+<section class="contact">
+  <div class="c-bg-video">
+    <video class="c-bg-video__content" autoplay muted loop>
+      <source src="./images/winter.mp4" type="video/mp4">
+      <source src="/images/" type="video/webm">
+    </video>
+  </div>
+  <div class="l-content__width-min">
+    <div class="c-mainTitle">
+      <h1 class="animate-title">contact</h1><br>
+      <p>
+        最後までご覧いただきありがとうございます。<br>
+        感想等ございましたら以下のフォームからお願い致します。
+      </p>
+    </div>
+    <div class="p-contact">
+      <form method="POST" class="p-contact__form" data-netlify="true">
+        <table>
+          <tbody>
+            <tr>
+              <th><span class="u-red">＊</span>&nbsp;お問い合わせ内容</th>
+              <td>
+                <div class="p-contact_select">
+                  <select name="selecter" id="selecter" class="select" required>
+                    <option value selected="selected">選択して下さい</option>
+                    <option value="お仕事について">お仕事について</option>
+                    <option value="私について">私について</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th><span class="u-red">＊</span>&nbsp;お名前</th>
+              <td><input type="text" data-type="text" name="name" size="40" class="u-small" maxlength="20" required></td>
+            </tr>
+            <tr>
+              <th><span class="u-red">＊</span>&nbsp;メールアドレス</th>
+              <td><input type="text" data-type="email" name="address" size="40" class="u-small" required>
+              </td>
+            </tr>
+            <tr>
+              <th><span class="u-red">＊</span>&nbsp;お問い合わせの概要</th>
+              <td><textarea name="message" rows="30" cols="60" maxlength="300" required></textarea>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="u-text-center">
+          <button type="submit" class="c-btn slide-bg u-mt40">送信する</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

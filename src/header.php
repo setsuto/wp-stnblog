@@ -5,8 +5,8 @@
 wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 wp_enqueue_style('font-Poppins', 'https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500%3B700&#038;display=swap');
 wp_enqueue_style('font-2P', 'https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
-wp_enqueue_style('swiper-min', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 wp_enqueue_style('style-css', get_template_directory_uri() . './styles/style.css');
+wp_enqueue_script('jquery');
 wp_head();
 ?>
 <meta charset="UTF-8">
@@ -18,7 +18,7 @@ wp_head();
   <div id="global-container">
     <header class="header">
       <section class="l-header l-content__width" id="headerMenu">
-        <h1><a style="color:black" href="<?php echo home_url(); ?>">S.TANABE</a></h1>
+        <h1><a style="color:black" href="<?php echo home_url(); ?>">カッコウ速報</a></h1>
         <div class="p-menu">
           <ul class="p-menu__list nav__links">
             <li v-for="headerList in headerLists" class="p-menu__item">
