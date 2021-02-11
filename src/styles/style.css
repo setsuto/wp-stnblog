@@ -762,7 +762,13 @@ button:active, button:focus {
 .l-footer {
   text-align: center;
   padding: 65px 0;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 37.5em) {
+  .l-footer {
+    font-size: 1.6rem;
+  }
 }
 
 .swiper-slide article {

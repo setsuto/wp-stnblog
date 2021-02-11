@@ -10,6 +10,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendors/moment.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/axios.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/headerMenu.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/tabMenu.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/acordion.js"></script>
 
 <?php wp_footer(); ?>

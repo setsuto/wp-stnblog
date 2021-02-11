@@ -43,10 +43,10 @@
       <div class="hero__content">
         <figure class="hero__image">
           <a v-bind:href="post['url']" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/games/hero5.jpg" alt="hero_2">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/games/hero2.jpg" alt="hero_2">
           </a>
         </figure>
-        <iframe src="https://store.steampowered.com/widget/1150690/" frameborder="0" width="100%" height="100%"></iframe>
+        <iframe src="https://store.steampowered.com/widget/481510/" frameborder="0" width="100%" height="100%"></iframe>
       </div>
       <div class="hero__content">
         <figure class="hero__image">
