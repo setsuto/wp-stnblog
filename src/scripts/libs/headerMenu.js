@@ -11,10 +11,6 @@ var app = new Vue({
       },
       {
         id: 'skill',
-        name: 'TWITTER'
-      },
-      {
-        id: 'skill',
         name: 'CONTACT'
       },
     ]

@@ -8,8 +8,11 @@
   }
 
   &__article {
-    padding-bottom: 250px;
+    padding-bottom: 50px;
     flex-basis: 55%;
+    @include breakpoint-up(tab-port) {
+      padding-bottom: 200px;
+    }
     @include breakpoint-up(tab-land) {
       flex-basis: 65%;
     }
@@ -25,10 +28,15 @@
 }
 
 .hero {
-  padding-top: 40px;
+  width: 100%;
+  margin-bottom: 30px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include breakpoint-up(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   @include breakpoint-up(tab-port) {
     grid-template-columns: repeat(4, 1fr);

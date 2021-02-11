@@ -33,21 +33,4 @@
     </article>
     <?php get_sidebar('content'); ?>
   </main>
-
-</div>
-<?php get_footer(); ?>
-
-
-<div class="pickup__body">
-  <div class="pickup__meta">
-    <?php the_category(); ?>
-    <time class="pickup__time" datetime="<?php the_time('Y-m-d-h-m'); ?>">
-      <?php the_time('Y.m.d h:m'); ?>
-    </time>
-  </div>
-  <h2 class="pickup__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-  <div class="pickup__desc">
-    <p><?php the_excerpt(); ?></p>
-    <p><a href="<?php the_permalink(); ?>">[続きを読む]</a></p>
-  </div>
 </div>

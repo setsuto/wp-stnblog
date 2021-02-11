@@ -32,13 +32,8 @@
 @import "./modules/object/component/_btn";
 @import "./modules/object/component/_modal";
 @import "./modules/object/component/_bgVideo";
-@import "./modules/object/component/_article";
-@import "./modules/object/component/_news";
-@import "./modules/object/component/_pickup";
-@import "./modules/object/component/_listing";
 @import "./modules/object/component/_postLinks";
 @import "./modules/object/component/_accordion";
-@import "./modules/object/component/_profile";
 @import "./modules/object/component/_mask";
 // -----------------------------------------------------------------
 // Project
@@ -49,6 +44,11 @@
 @import "./modules/object/project/_menu";
 @import "./modules/object/project/_contact";
 @import "./modules/object/project/_comments";
+@import "./modules/object/project/_listing";
+@import "./modules/object/project/_article";
+@import "./modules/object/project/_news";
+@import "./modules/object/project/_profile";
+@import "./modules/object/project/_pickup";
 
 // -----------------------------------------------------------------
 // Utility

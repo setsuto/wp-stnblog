@@ -1,5 +1,4 @@
-<ul class="news__list">
-  <li class="news__item entry">
+  <div class="news__item">
     <figure class="news__pic">
       <a class="news__pic-link" href="<?php the_permalink(); ?>">
         <?php if (has_post_thumbnail()) : ?>
@@ -23,6 +22,8 @@
       <div class="news__text">
         <a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a>
       </div>
+      <div class="news__more">
+        <a href="<?php the_permalink(); ?>">続きを読む</a>
+      </div>
     </div>
-  </li>
-</ul>
+  </div>

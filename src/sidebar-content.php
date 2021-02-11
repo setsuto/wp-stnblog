@@ -48,7 +48,7 @@
         <p>
           27歳高卒フリーターのおっさんです。<br>
           ネット文化とゲームと映画が大好きです。<br>
-          趣味のパソコンカタカタが興じてブログを作ってみました。楽しんでいってください。
+          趣味のパソコンカタカタが興じて一からブログを作ってみました。楽しんでいってください。
         </p>
         <ul class="profile__icon">
           <li>
@@ -62,22 +62,23 @@
 
     <div class="c-subTitle u-pt20">
       <h2><span>web系入門ススメ</span></h2>
+      <p class="u-pt40">ブログ作成に役立った講座・参考書</p>
     </div>
     <section class="sidebar-content">
       <div class="listing__item">
         <div class="listing__image">
-          <a href="https://www.udemy.com/course/excel-start/" target="_blank" style="padding-top: 66.5%;">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/udemy_1.jpg" alt="hero_1">
+          <a href="https://dotinstall.com/lessons" target="_blank" style="padding-top: 66.5%;">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/study/dot.png" alt="hero_1">
           </a>
         </div>
         <div class="listing__title">
-          <a href="https://www.udemy.com/course/excel-start/" target="_blank">【初心者から上級者まで】１日で学べるエクセルの教科書　マスターコース</a>
+          <a href="https://dotinstall.com/lessons" target="_blank">ドットインストール：webサイトを作れるようになろう</a>
         </div>
       </div>
       <div class="listing__item">
         <div class="listing__image">
           <a href="https://www.udemy.com/course/advanced-css-and-sass/" target="_blank" style="padding-top: 66.5%;">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/udemy_2.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/udemy_2.jpg" alt="hero_1">
           </a>
         </div>
         <div class="listing__title">
@@ -90,7 +91,7 @@
       <div class="listing__item">
         <div class="listing__image">
           <a href="https://www.amazon.co.jp/dp/4797398892/" target="_blank" style="padding-top: 140%;">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/book1.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/book1.jpg" alt="hero_1">
           </a>
         </div>
         <div class="listing__title">
@@ -103,7 +104,7 @@
       <div class="listing__item">
         <div class="listing__image">
           <a href="https://www.amazon.co.jp/dp/4297111853/" target="_blank" style="padding-top: 140%;">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/book2.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/book2.jpg" alt="hero_1">
           </a>
         </div>
         <div class="listing__title">

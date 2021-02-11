@@ -2,8 +2,11 @@
 	width: 100%;
 	margin-bottom: 30px;
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 10px;
+	grid-template-columns: repeat(1, 1fr);	
+	@include breakpoint-up(phone) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 
 	&__item {
 		overflow:	hidden;
