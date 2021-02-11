@@ -46,7 +46,9 @@ function twpp_change_excerpt_length($length)
 }
 add_filter('excerpt_length', 'twpp_change_excerpt_length', 999);
 
-
+/**
+ * ウィジェットエリア機能
+ */
 if (function_exists('register_sidebar')) {
     register_sidebar(array(
         'name' => 'サイドバー',
@@ -62,4 +64,16 @@ if (function_exists('register_sidebar')) {
         'before_widget' => '<div class="pickup">',
         'after_widget' => '</div>',
     ));
+}
+
+/**
+ * コメントの項目を変更する
+ */
+add_filter('comment_form_default_fields', 'my_comment_form_default_fields');
+function my_comment_form_default_fields($args)
+{
+    $args['author'] = ''; // 「名前」を削除
+    $args['email'] = ''; // 「メールアドレス」を削除
+    $args['url'] = ''; // 「サイト」を削除
+    return $args;
 }

@@ -23,6 +23,9 @@
                 <?php the_content(); ?>
               </div>
             </div>
+
+            <?php comments_template(); ?>
+
             <div class="postLinks">
               <div class="postLink postLink-prev"><?php previous_post_link('<i class="fas fa-chevron-left"></i>%link'); ?>
               </div>

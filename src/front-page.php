@@ -35,7 +35,7 @@
       <div class="p-hero__content">
         <figure class="p-hero__image">
           <a v-bind:href="post['url']" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/games/hotelshowls.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>./images/games/hero1.jpg" alt="hero_1">
           </a>
         </figure>
         <iframe src="https://store.steampowered.com/widget/968350/" frameborder="0" width="100%" height="100%"></iframe>
@@ -43,7 +43,7 @@
       <div class="p-hero__content">
         <figure class="p-hero__image">
           <a v-bind:href="post['url']" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/games/night_in_the_woods.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>./images/games/hero2.jpg" alt="hero_2">
           </a>
         </figure>
         <iframe src="https://store.steampowered.com/widget/481510/" frameborder="0" width="100%" height="100%"></iframe>
@@ -51,7 +51,7 @@
       <div class="p-hero__content">
         <figure class="p-hero__image">
           <a v-bind:href="post['url']" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/games/babaisyou.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>./images/games/hero3.jpg" alt="hero_3">
           </a>
         </figure>
         <iframe src="https://store.steampowered.com/widget/736260/" frameborder="0" width="100%" height="100%"></iframe>
@@ -59,7 +59,7 @@
       <div class="p-hero__content">
         <figure class="p-hero__image">
           <a v-bind:href="post['url']" target="_blank">
-            <img src="<?php echo get_template_directory_uri(); ?>./images/games/ktc.jpg" alt="hero_1">
+            <img src="<?php echo get_template_directory_uri(); ?>./images/games/hero4.jpg" alt="hero_4">
           </a>
         </figure>
         <iframe src="https://store.steampowered.com/widget/701160/" frameborder="0" width="100%" height="100%"></iframe>

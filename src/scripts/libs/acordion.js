@@ -42,7 +42,6 @@ Vue.component('accordion', {
   }
 });
 
-
 new Vue({
   el: '#acordion'
 });
