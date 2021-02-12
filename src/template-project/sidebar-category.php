@@ -3,6 +3,3 @@
   <?php $args = array('title_li' => '',);
   wp_list_categories($args); ?>
 </ul>
-
-
-<?php get_template_part('component/loop', 'news'); ?>

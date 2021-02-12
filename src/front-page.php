@@ -108,7 +108,7 @@
             <?php if (have_posts()) : ?>
               <?php while (have_posts()) : the_post(); ?>
                 <article class="news u-pt40">
-                  <?php get_template_part('component/loop', 'news'); ?>
+                  <?php get_template_part('template-parts/loop', 'news'); ?>
                 </article>
               <?php endwhile; ?>
             <?php endif; ?>
@@ -121,22 +121,13 @@
           </div>
           <!-- コラム ----------------------------------------------------->
           <div class="tab__content" id="tab__product">
-            <?php if (have_posts()) : ?>
-              <?php while (have_posts()) : the_post(); ?>
-                <article class="news u-pt40">
-                  <?php get_template_part('component/loop', 'news'); ?>
-                </article>
-              <?php endwhile; ?>
-            <?php endif; ?>
+            編集中2
             <div class="u-pt80 u-text-center">
-              <?php if (function_exists('wp_pagenavi')) {
-                wp_pagenavi();
-              } ?>
             </div>
           </div>
           <!-- セール・クーポン情報 ----------------------------------------------------->
           <div class="tab__content" id="tab__contact">
-            お問い合わせ。お問い合わせ。
+            編集中3
           </div>
         </div>
       </section>
@@ -159,23 +150,23 @@
         <p class="u-pt40">ブログ作成に役立った講座・参考書</p>
       </div>
       <section class="sidebar-content">
-        <?php get_sidebar('study'); ?>
+        <?php get_template_part('template-project/sidebar', 'study'); ?>
       </section>
       <section class="sidebar-category u-pt40">
         <accordion>
-          <?php get_sidebar('category') ?>
+          <?php get_template_part('template-project/sidebar', 'category'); ?>
         </accordion>
       </section>
       <section class="sidebar-archive">
         <accordion>
-          <?php get_sidebar('archive') ?>
+          <?php get_template_part('template-project/sidebar', 'archive'); ?>
         </accordion>
       </section>
       <div class="c-subTitle u-pt20">
         <h2><span>当サイトについて</span></h2>
       </div>
       <section class="sidebar-profile u-pt40">
-        <?php get_sidebar('profile') ?>
+        <?php get_template_part('template-project/sidebar', 'profile'); ?>
       </section>
       <?php get_footer(); ?>
     </aside>
