@@ -23,7 +23,6 @@
                 <?php the_content(); ?>
               </div>
             </div>
-
             <?php comments_template(); ?>
 
             <div class="postLinks">
@@ -36,6 +35,10 @@
         <?php endwhile; ?>
       <?php endif; ?>
     </article>
-    <?php get_sidebar('content'); ?>
+
+    <aside class="content__aside" id="acordion">
+      <?php get_sidebar('content'); ?>
+    </aside>
+
   </main>
 </div>

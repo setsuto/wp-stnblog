@@ -54,8 +54,8 @@ if (function_exists('register_sidebar')) {
         'name' => 'サイドバー',
         'id' => 'sidebar',
         'description' => 'サイドバーウィジェット',
-        'before_widget' => '<div class="sidebar-content">',
-        'after_widget' => '</div>',
+        'before_widget' => '<section class="sidebar-content">',
+        'after_widget' => '</section>',
     ));
     register_sidebar(array(
         'name' => 'ピックアップエリア',
