@@ -1,3 +1,8 @@
+.bg {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -27,24 +32,8 @@
   }
 }
 
-.hero {
-  width: 100%;
-  margin-bottom: 30px;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(1, 1fr);
-
-  @include breakpoint-up(phone) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @include breakpoint-up(tab-port) {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 .sidebar-content {
-    padding-top: 40px;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;

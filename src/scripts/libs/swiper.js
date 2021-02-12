@@ -3,12 +3,12 @@ const swiper = new Swiper('.swiper-container', {
   loop: true,
   grabCursor: true,
   effect: 'slide',
-  centeredSlides: true,
+  // centeredSlides: true,
   slidesPerView: 1,
   speed: 1000,
   breakpoints: {
     900: {
-      slidesPerView: 3,
+      slidesPerView: 4,
     }
   },
   navigation: {

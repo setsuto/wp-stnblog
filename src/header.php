@@ -5,6 +5,7 @@
 wp_enqueue_style('font-awesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css');
 wp_enqueue_style('font-Poppins', 'https://fonts.googleapis.com/css2?family=Poppins%3Awght%40400%3B500%3B700&#038;display=swap');
 wp_enqueue_style('font-2P', 'https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+wp_enqueue_style('vendors-css', get_template_directory_uri() . '/styles/vendors/swiper.min.css');
 wp_enqueue_style('style-css', get_template_directory_uri() . '/styles/style.css');
 wp_enqueue_script('jquery');
 wp_head();
