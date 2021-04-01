@@ -1,10 +1,12 @@
 .news {
-
 	&__item {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		border-bottom: 1px solid #ccc;
+		box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+		margin-bottom: 10px;
+		padding: 10px;
+		background: $cWhite;
 		@include breakpoint-up(phone) {
 			flex-direction: row;
 		}
@@ -20,10 +22,10 @@
 		overflow: hidden;
 		padding-top: 50%;
 		@include breakpoint-up(phone) {
-			padding-top: 100%;
+			padding-top: 70%;
 		}
 		@include breakpoint-up(tab-land) {
-			padding-top: 70%
+			padding-top: 80%
 		}
 		img {
 			@include absCenter;
@@ -62,9 +64,9 @@
 
 				a {
 					line-height: 1;
-					padding: 5px 10px;
+					padding: 5px 8px;
 					display: inline-block;
-					font-size:1.4rem;
+					font-size:1rem;
 					border: 1px solid #eee;
 					color: $cWhite;
 					background: $cBgBlack;
@@ -80,19 +82,19 @@
 		@include breakpoint-up(phone) {
 			padding: 0;
 		}
-		p {font-weight: bold;
-			font-size: 1.6rem;
+		p {
+			font-size: 1.2rem;
 			margin-top: 10px;
-			@include breakpoint-up(phone) {
-				font-size: 1.4rem;
+			@include breakpoint-up(tab-land) {
+				font-size: 1.6rem;
 			}
 		}
 	}
 
 	&__more {
 		position: absolute;
-		bottom: 10px;
-		right: 10px;
+		bottom: 0;
+		right: 0;
 		a {
 			display: block;
 			box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -101,5 +103,11 @@
 			color: rgba(41,152,255,.85);
 			font-size: 1.4rem;
 		}
+	}
+
+	&__footer {
+		background: $cWhite;
+		padding: 40px 0;
+		text-align: center;
 	}
 }

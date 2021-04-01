@@ -1,17 +1,25 @@
 .pickup {
-	width: 100%;
+	padding: 10px 10px 0;
+	background: white;
+	// width: 100%;
 	margin-bottom: 30px;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(1, 1fr);	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	// display: grid;
+	// grid-gap: 10px;
+	// grid-template-columns: repeat(1, 1fr);	
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 	@include breakpoint-up(phone) {
-		grid-template-columns: repeat(2, 1fr);
+		// grid-template-columns: repeat(2, 1fr);
 	}
 
 	&__item {
+		flex-basis: calc((100% - 2 * 5px) / 2);
+		margin-bottom: 10px;
 		overflow:	hidden;
 		position: relative;
-		border: 2px solid #eee;
+		box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 		border-top: none;
 	}
 
@@ -63,4 +71,48 @@
 	&__title {
 
 	}
+}
+
+
+
+
+.pickup .pickup__item:nth-child(1) .pickup__image>a:first-child::before {
+  color: $cGreen-1;
+}
+.pickup .pickup__item:nth-child(2) .pickup__image>a:first-child::before {
+  color: $cBlue-1;
+}
+.pickup .pickup__item:nth-child(3) .pickup__image>a:first-child::before {
+  color: $cOrange;
+}
+
+.pickup .pickup__item .pickup__image>a:first-child::before {
+  position: absolute;
+  content: '■';
+  font-size: 125px;
+  top: -110px;
+  left: -65px;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.pickup .pickup__item:nth-child(1) .pickup__image>a:first-child::after {
+  content: '1';
+}
+.pickup .pickup__item:nth-child(2) .pickup__image>a:first-child::after {
+  content: '2';
+}
+.pickup .pickup__item:nth-child(3) .pickup__image>a:first-child::after {
+  content: '3';
+}
+.pickup .pickup__item:nth-child(4) .pickup__image>a:first-child::after {
+  content: '4';
+}
+
+.pickup .pickup__item .pickup__image>a:first-child::after {
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  color: #ffffff;
+  z-index: 3;
 }

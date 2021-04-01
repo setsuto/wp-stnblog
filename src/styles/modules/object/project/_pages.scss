@@ -14,12 +14,11 @@
 
   &__article {
     padding-bottom: 50px;
-    flex-basis: 55%;
+    flex-basis: 65%;
     @include breakpoint-up(tab-port) {
       padding-bottom: 200px;
     }
     @include breakpoint-up(tab-land) {
-      flex-basis: 65%;
     }
   }
 

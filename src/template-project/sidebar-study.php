@@ -20,16 +20,6 @@
 </div>
 <div class="listing__item">
   <div class="listing__image">
-    <a href="https://www.amazon.co.jp/dp/4797398892/" target="_blank" style="padding-top: 140%;">
-      <img src="<?php echo get_template_directory_uri(); ?>/images/book1.jpg" alt="hero_1">
-    </a>
-  </div>
-  <div class="listing__title">
-    <a href="https://www.amazon.co.jp/dp/4797398892/" target="_blank">1冊ですべて身につくHTML & CSSとWebデザイン入門講座</a>
-  </div>
-</div>
-<div class="listing__item">
-  <div class="listing__image">
     <a href="https://www.amazon.co.jp/dp/4297111853/" target="_blank" style="padding-top: 140%;">
       <img src="<?php echo get_template_directory_uri(); ?>/images/book2.jpg" alt="hero_1">
     </a>

@@ -15,14 +15,14 @@ html {
 }
 
 body {
-  
+  background: $cGray;
   position: relative;
   background-size: cover;
-  font-family: "Poppins", serif, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-family: "Poppins", sans-serif, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   line-height: 1.7;
   font-size: 1.4rem;
   // overflow-x: hidden;
-  font-weight: bold;
+  // font-weight: bold;
 }
 
 img {

@@ -1,4 +1,18 @@
 .hero {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-image: linear-gradient(to right bottom, $cBgBlack, $cBgBlack);
+    // background: $cNavy-1;
+    z-index: -2;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
   &__content {
     overflow: hidden;
     position: relative;
@@ -6,17 +20,24 @@
   }
 
   &__image {
+    position: relative;
     background-color: rgba(0, 0, 0, 0.4);
 
     @include breakpoint-up(phone) {}
 
     a {
-      padding-top: 0;
       display: block;
       position: relative;
       overflow: hidden;
-
+      padding-top: 60%;
       @include breakpoint-up(phone) {
+        padding-top: 60%;
+      }
+      @include breakpoint-up(tab-port) {
+        padding-top: 60%;
+      }
+
+      @include breakpoint-up(tab-land) {
         padding-top: 60%;
 
       }
@@ -24,6 +45,7 @@
       img {
         @include absCenter;
         object-fit: cover;
+        object-position: top;
         height: 100%;
         width: 100%;
       }
@@ -49,7 +71,7 @@
   .swiper-slide {
     height: auto;
     box-sizing: border-box;
-    padding: 0 10px;
+    padding: 0 5px;
   }
   
   

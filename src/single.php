@@ -5,40 +5,44 @@
     <article class="content__article">
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class('article'); ?>>
-            <div class="article__header">
-              <h2 class="article__title"><?php the_title(); ?></h2>
-              <ul class="article__meta">
-                <li>
-                  <?php the_category(); ?>
-                </li>
-                <li>
-                  <time datetime="<?php the_time('Y-m-d-h-m'); ?>">
-                    <?php the_time('Y.m.d h:m'); ?></time>
-                </li>
-              </ul>
-            </div>
-            <div class="article__body">
-              <div class="content">
-                <?php the_content(); ?>
-              </div>
-            </div>
-            <?php comments_template(); ?>
-
-            <div class="postLinks">
-              <div class="postLink postLink-prev"><?php previous_post_link('<i class="fas fa-chevron-left"></i>%link'); ?>
-              </div>
-              <div class="postLink postLink-next"><?php next_post_link('%link<i class="fas fa-chevron-right"></i>'); ?>
-              </div>
-            </div>
-          </article>
+          <?php get_template_part('template-project/single', 'article'); ?>
         <?php endwhile; ?>
       <?php endif; ?>
     </article>
 
     <aside class="content__aside" id="acordion">
-      <?php get_sidebar('content'); ?>
-    </aside>
+      <div class="content-aside__top">
+        <?php get_search_form(); ?>
+        <div class="c-subTitle u-pt10">
+          <h2><span>24時間の人気記事</span></h2>
+        </div>
+        <!-- サイドバーウィジェット -->
+        <?php dynamic_sidebar('sidebar'); ?>
+        <!-- サイドバーウィジェット -->
 
+        <div class="c-subTitle u-pt20">
+          <h2><span>最新記事一覧</span></h2>
+        </div>
+        <section class="u-pt40">
+          <?php get_template_part('template-project/sidebar', 'latests'); ?>
+        </section>
+
+        <div class="c-subTitle u-pt20">
+          <h2><span>その他</span></h2>
+        </div>
+
+        <section class="sidebar-category u-pt40">
+          <accordion>
+            <?php get_template_part('template-project/sidebar', 'category'); ?>
+          </accordion>
+        </section>
+        <section class="sidebar-archive">
+          <accordion>
+            <?php get_template_part('template-project/sidebar', 'archive'); ?>
+          </accordion>
+        </section>
+      </div>
+      <?php get_footer(); ?>
+    </aside>
   </main>
 </div>

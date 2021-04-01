@@ -1,5 +1,6 @@
 .listing {
 	&__item {
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     overflow: hidden;
     position: relative;
 		display: block;
@@ -43,55 +44,4 @@
 
 
 
-.sidebar-content .listing__item:nth-child(1) .listing__image>a:first-child::before {
-  color: $cGreen-1;
-}
-.sidebar-content .listing__item:nth-child(2) .listing__image>a:first-child::before {
-  color: $cBlue-1;
-}
-.sidebar-content .listing__item:nth-child(3) .listing__image>a:first-child::before {
-  color: $cOrange;
-}
 
-.sidebar-content .listing__item .listing__image>a:first-child::before {
-  position: absolute;
-  content: '■';
-  font-size: 110px;
-  top: -100px;
-  left: -65px;
-  transform: rotate(45deg);
-  z-index: 2;
-}
-
-.sidebar-content .listing__item:nth-child(1) .listing__image>a:first-child::after {
-  content: '1';
-}
-.sidebar-content .listing__item:nth-child(2) .listing__image>a:first-child::after {
-  content: '2';
-}
-.sidebar-content .listing__item:nth-child(3) .listing__image>a:first-child::after {
-  content: '3';
-}
-.sidebar-content .listing__item:nth-child(4) .listing__image>a:first-child::after {
-  content: '4';
-}
-.sidebar-content .listing__item:nth-child(5) .listing__image>a:first-child::after {
-  content: '5';
-}
-.sidebar-content .listing__item:nth-child(6) .listing__image>a:first-child::after {
-  content: '6';
-}
-.sidebar-content .listing__item:nth-child(7) .listing__image>a:first-child::after {
-  content: '7';
-}
-.sidebar-content .listing__item:nth-child(8) .listing__image>a:first-child::after {
-  content: '8';
-}
-
-.sidebar-content .listing__item .listing__image>a:first-child::after {
-  position: absolute;
-  top: 2px;
-  left: 9px;
-  color: #ffffff;
-  z-index: 3;
-}

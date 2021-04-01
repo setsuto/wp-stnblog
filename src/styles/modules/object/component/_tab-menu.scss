@@ -1,19 +1,31 @@
 .tab {
+  padding: 10px;
+  background: $cRed-1;
   &__label {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-  & li a{
-    display: inline-block;
-    width: 130px;
+
+  li {
+    flex-basis: calc(100% / 3);
     text-align: center;
-    padding: 8px 0;
-    color: #333;
+    background: $cRed-1;
+  }
+
+  & li a{
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 100%;
+    display: inline-block;
+    padding: 15px 0;
+    color: $cWhite;
     text-decoration: none;
     cursor: pointer;
     &.active{
-      background: $cGray;
+      color: $cBgBlack;
+      font-size:1.6rem;
+      background: $cWhite;
     }
     &:not(.active):hover{
       opacity: 0.5;
@@ -22,10 +34,11 @@
   }
   }
   &__content{
+  	// box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     display: none;
     &.active{
-      background: $cGray;
-      font-size:16px;
+      background: $cWhite;
+      
       min-height: 150px;
       padding: 15px;
       display: block;  
